@@ -63,8 +63,7 @@ public:
             }
         }
         clock_t end = clock();
-        clock_t time = end - begin;
-        return time;
+        return end - begin;
     }
 
     clock_t returnPass(unsigned numberExp) {
@@ -75,14 +74,11 @@ public:
             }
         }
         clock_t end = clock();
-        clock_t time = end - begin;
-        return time;
+        return end - begin;
     }
 
     clock_t randomPass(unsigned numberExp) {
         vector<int> current_num;
-        clock_t time1;
-
         for (unsigned i = 0; i < meaningExp[numberExp]; ++i) {
             current_num.push_back(i);
         }
@@ -97,8 +93,7 @@ public:
             }
         }
         clock_t end = clock();
-        time1 = end - begin;
-        return time1;
+        return end - begin;
     }
 
     void start() {
