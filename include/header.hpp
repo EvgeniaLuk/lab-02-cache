@@ -45,10 +45,8 @@ public:
     }
 
     void warmUp_cache(unsigned size_exp) {
-        unsigned tmp;
         for (unsigned j = 0; j < 10; ++j) {
             for (unsigned n = 0; n < size_exp; ++n) {
-                tmp = n;
                 unsigned char temp = rand_r(&n) % 128;
                 buffer[n] = temp;
             }
