@@ -35,7 +35,8 @@ public:
             ++n;
         }
         meaningExp.push_back(1.5 * l3);
-        for ( unsigned i = 0; i < static_cast<unsigned>(meaningExp.size()); ++i ) {
+        for ( unsigned i = 0; i < static_cast<unsigned>(meaningExp.size()); 
+             ++i ) {
         cout << i << "exp number" << meaningExp[i] << endl;}
     }
 
