@@ -41,7 +41,6 @@ public:
 
 
     void createBuffer(unsigned size_exp) {
-
         buffer = new unsigned char[size_exp];
     }
 
@@ -55,7 +54,6 @@ public:
                 buffer[n] = temp;
             }
         }
-
     }
 
     clock_t directPass(unsigned numberExp) {
