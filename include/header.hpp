@@ -50,7 +50,6 @@ public:
             for (unsigned n = 0; n < size_exp; ++n) {
                 tmp = n;
                 unsigned char temp = rand_r(&n) % 128;
-                n = tmp;
                 buffer[n] = temp;
             }
         }
